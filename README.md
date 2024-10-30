@@ -16,7 +16,6 @@ This API provides secure endpoints that are verified against Entra ID in Azure. 
 1. Open authConfig.js
 1. Replace <PRIMARY_DOMAIN> with the Primary Domain from Entra ID tenant.
 1. Replace <TENANT_ID> with the Tenant ID from Entra ID tenant.
-1. Replace <APPLICATION_CLIENT_ID> with the Client ID from the app in Step 1.
 1. Replace <APPLICATION_ID_URI> with the Client URI from the app in Step 1.
 
 ## Tutorials
