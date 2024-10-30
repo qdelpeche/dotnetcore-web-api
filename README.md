@@ -1,6 +1,6 @@
 # .NET Core Web API
 
-This API provides secure endpoints that are verified against Entra ID in Azure. The endpoints are protected or require a specific scope. This code works perfectly with the free tier of Entra ID but does not support authorization against an API endpoint. 
+This API provides secure endpoints that are verified against Entra ID in Azure. The endpoints are protected or require a specific scope. This code works perfectly with the free tier of Entra ID. 
 
 ## Setup
 
