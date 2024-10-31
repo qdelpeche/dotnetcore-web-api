@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>dotnetcore_web_api</RootNamespace>
+    <RootNamespace>DotNetCoreWebApi</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.Resource;
+using DotNetCoreWebApi.Models;
 
 [Authorize]
 [Route("api/requiredscope")]
@@ -11,9 +12,10 @@ public class RequiredScopeController : ControllerBase
 {
     
     [HttpGet]
-    public IActionResult Get()
+    [Produces("application/json")]
+    public ActionResult<ResponseModel> Get()
     {
-        var result = new
+        var result = new ResponseModel
         {
             Message = "This is a protected endpoint that requires the crud scope",
             Date = DateTime.UtcNow
