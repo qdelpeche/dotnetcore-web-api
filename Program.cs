@@ -3,7 +3,7 @@ using Microsoft.Identity.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add CORS policy
+//Add CORS policy - needed for react-js-authz project
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
@@ -28,13 +28,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    app.UseHttpsRedirection();
+}
 
-// Apply the CORS policy to the app
+//Apply the CORS - needed for react-js-authz project
 app.UseCors("AllowReactApp");
 
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseHttpsRedirection();
 app.MapControllers();
 
 app.Run();

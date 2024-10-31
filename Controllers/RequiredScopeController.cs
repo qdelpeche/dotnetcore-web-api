@@ -4,14 +4,21 @@ using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.Resource;
 
 [Authorize]
-[Route("api/[controller]")]
-[RequiredScope("Access.User")]
+[Route("api/requiredscope")]
+[RequiredScope("crud")]
 [ApiController]
 public class RequiredScopeController : ControllerBase
 {
+    
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok("This is a protected endpoint that requires the Access.User scope");
+        var result = new
+        {
+            Message = "This is a protected endpoint that requires the crud scope",
+            Date = DateTime.UtcNow
+        };
+
+        return Ok(result);
     }
 }
