@@ -19,6 +19,7 @@ This API provides secure endpoints that are verified against Entra ID in Azure. 
 1. Open appsettings.json
 1. Replace ``<PRIMARY_DOMAIN>`` with the **Primary domain** from the Microsoft Entra ID tenant.
 1. Replace ``<TENANT_ID>`` with the **Tenant ID** from the Microsoft Entra ID tenant.
+1. Replace ``<CLIENT_ID>`` with the **Client ID** from the app in Step 1.
 1. Replace ``<APPLICATION_ID_URI>`` with the **Application ID URI** from the app in Step 1.
 
 ## Tutorials
